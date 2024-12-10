@@ -1,11 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterLink, RouterOutlet } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [RouterOutlet, RouterLink],
+  template: `
+    <main>
+
+      <a [routerLink]="['/']">
+        <header class="brand-name">
+         <h1> To Do App</h1>
+        </header>
+      </a>
+      <section class="content">
+        <router-outlet></router-outlet>
+      </section>
+    </main>`,
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'pet-angular-app';
