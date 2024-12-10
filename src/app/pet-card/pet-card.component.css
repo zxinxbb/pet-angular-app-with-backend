@@ -1,0 +1,35 @@
+
+.pet-card-component {
+  color: var(--primary-color);
+  padding: 5px 5x 0 5px;
+}
+.pet-card-component-name {
+  padding: 5px;
+}
+.pet-card-component-status {
+  padding: 5px;
+}
+.pet-card-component_button {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  justify-content: margin-left; /* Center the buttons */
+  align-items: center; /* Vertically center buttons */
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+  margin-top: 10px; /* Add some space at the top */
+}
+
+
+ section.pet-card-component a {
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+section.pet-card-component a:hover {
+  padding-left: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+ section.pet-card-component a::after {
+  margin-left: 5px;
+}

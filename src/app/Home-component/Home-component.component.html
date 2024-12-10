@@ -1,6 +1,8 @@
-<section class="home">
-<div>
-  
-</div>
-</section>
+<section class="results">
 
+  <div class="pet-card" *ngFor=" let petLocation of  petsList">
+    <app-pet-card [petLocation]="petLocation" ></app-pet-card>
+
+
+  </div>
+</section>

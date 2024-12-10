@@ -12,7 +12,7 @@ import { RouterModule, RouterLink, RouterOutlet } from '@angular/router';
 
       <a [routerLink]="['/']">
         <header class="brand-name">
-         <h1> To Do App</h1>
+         <h1>PetoTrader</h1>
         </header>
       </a>
       <section class="content">

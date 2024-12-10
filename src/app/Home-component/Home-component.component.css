@@ -1,0 +1,36 @@
+.results {
+  display: grid;
+  column-gap: 14px;
+  row-gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+/* Apply border to the wrapper around each todo item */
+.results .pet-card{
+  border: 2px solid #646363;        /* Add a border around each card */
+  border-radius: 8px;             /* Optional: round the corners */
+  padding: 16px;                  /* Optional: add some padding */
+  background-color: white;        /* Optional: set a background color */
+  box-sizing: border-box;         /* Include border in element's total size */
+}
+
+
+
+
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 499px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
