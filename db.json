@@ -1,0 +1,112 @@
+{
+  "users":[
+    {
+    "userId":1,
+    "userName":"Sonia"
+    },
+    {
+      "userId":2,
+      "userName":"Anthony"
+      },
+      {
+        "userId":3,
+        "userName":"Nicola"
+        },
+        {
+          "userId":4,
+          "userName":"Zainab"
+          }
+
+        ],
+        "location": [
+  {
+    "locationId": 1,
+    "locationName":"Manchester"
+  },
+  {
+    "locationId": 2,
+    "locationName":"London"
+  },
+  {
+    "locationId": 3,
+    "locationName":"Hemel"
+  }
+
+  ],
+  "breed": [
+  {
+    "breedId": 1,
+    "breedName":"Mixed breed"
+  },
+  {
+    "breedId": 2,
+    "breedName":"Labrador"
+  },
+  {
+    "breedId": 3,
+    "breedName":"Tortoise"
+  },
+  {
+    "breedId": 4,
+    "breedName":"Goldfish"
+  },
+  {
+    "breedId": 5,
+    "breedName":"Rabbit"
+  }
+  ],
+  "type": [
+  {
+    "typeId": 1,
+    "typeName":"Cat"
+  },
+  {
+    "typeId": 2,
+    "breedName":"Dog"
+  }
+
+
+
+
+],
+"likes_dislikes": [
+  {
+    "likesId": 1,
+    "likesDescription":"Fetch a ball."
+
+  },
+  {
+    "likesId": 2,
+    "likesDescription":"Chase squirrels"
+
+  },
+  {
+    "likesId": 3,
+    "likesDescription":"Sleep."
+
+  }
+
+],
+"pet": [
+  {
+   "petId": 1,
+   "petName": "layla",
+   "breedId":2,
+   "typeId":1,
+   "locationId":1,
+   "userId":1
+
+  },
+  {
+    "petId": 2,
+    "petName": "Meg",
+    "breedId":2,
+    "typeId":1,
+    "locationId":1,
+    "userId":1
+
+   }
+
+
+]
+}
