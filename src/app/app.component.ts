@@ -15,11 +15,13 @@ import { MatIconModule } from '@angular/material/icon';
         <header class="brand-name">
 
          <h1>PetoTrader</h1>
-         <button>
+         <!-- <button [routerLink]="['/pet-post']">
    + Pet
-  </button>
+  </button> -->
+
         </header>
-      </a>
+        
+        </a>
       <section class="content">
         <router-outlet></router-outlet>
       </section>
