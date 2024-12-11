@@ -1,10 +1,16 @@
 <section class="pet-card-component">
+  <img
+      class="pet-photo"
+      [src]="petLocation.image"
+      alt="photo of {{ petLocation.petName }}"
+     crossorigin
+    />
   <h3 class="pet-name">{{ petLocation.petName }}</h3>
-  <p>{{ petLocation.description }}</p>
-  <p>{{ petLocation.age }}</p>
-  <p>{{ petLocation.type }}</p>
+  <p class="pet-description">{{ petLocation.description }}</p>
+  <p class="pet-age">{{ petLocation.age }}</p>
+  <p class="pet-type">{{ petLocation.type }}</p>
 
-  <section>
+
     <a [routerLink]="['/pet', petLocation.petId]">Learn More</a>
   </section>
-</section>
+

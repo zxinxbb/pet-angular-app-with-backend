@@ -95,7 +95,8 @@
   "age": 3,
    "type":"dog",
    "locationId":1,
-   "userId":1
+   "userId":1,
+   "image":"assets/image_files/760ecd40-5008-4ba0-b5bd-d30ffd727cba.jpg"
 
   },
   {
@@ -105,7 +106,8 @@
     "age": 12,
     "type":"dog",
     "locationId":1,
-    "userId":1
+    "userId":1,
+    "image":"assets/image_files/0503ca3f-6fde-44a2-b724-e43410cc7622.jpg"
 
    },
    {
@@ -115,8 +117,8 @@
     "age": 8,
     "type":"cat",
     "locationId":1,
-    "userId":1
-
+    "userId":1,
+    "image":"assets/image_files/pexels-pixabay-45201.jpg"
    },
    {
     "petId": 4,
@@ -125,8 +127,8 @@
     "age": 2,
     "type":"Fish",
     "locationId":1,
-    "userId":1
-
+    "userId":1,
+    "image":"assets/image_files/pexels-imsogabriel-2053815.jpg"
    },
    {
     "petId": 5,
@@ -135,7 +137,8 @@
     "age": 1,
     "type":"Rabbit",
     "locationId":1,
-    "userId":1
+    "userId":1,
+    "image":"assets/image_files/pexels-pixabay-326012.jpg"
 
    }
 

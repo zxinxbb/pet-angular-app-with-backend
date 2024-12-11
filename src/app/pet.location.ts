@@ -6,4 +6,5 @@ export interface PetLocation {
     type:String,
     locationId: number;
     userId: number;
+    image:string,
 }
