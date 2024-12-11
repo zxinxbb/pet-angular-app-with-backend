@@ -91,9 +91,9 @@
   {
    "petId": 1,
    "petName": "layla",
-   "description":"Likes chasing a ball.",
+   "description":"I like chasing a ball and eating ham.",
   "age": 3,
-   "type":"dog",
+   "type":"Dog",
    "locationId":1,
    "userId":1,
    "image":"assets/image_files/760ecd40-5008-4ba0-b5bd-d30ffd727cba.jpg"
@@ -102,9 +102,9 @@
   {
     "petId": 2,
     "petName": "Meg",
-    "description":"Likes chasing squirrels",
+    "description":"I like chasing squirrels and barking.",
     "age": 12,
-    "type":"dog",
+    "type":"Dog",
     "locationId":1,
     "userId":1,
     "image":"assets/image_files/0503ca3f-6fde-44a2-b724-e43410cc7622.jpg"
@@ -113,9 +113,9 @@
    {
     "petId": 3,
     "petName": "Oggy",
-    "description":"Likes long naps",
+    "description":"I enjoy long naps and sleeping on uninterested people.",
     "age": 8,
-    "type":"cat",
+    "type":"Cat",
     "locationId":1,
     "userId":1,
     "image":"assets/image_files/pexels-pixabay-45201.jpg"
@@ -123,7 +123,7 @@
    {
     "petId": 4,
     "petName": "Tiddles",
-    "description":"Likes to swim ",
+    "description":"I like to swim in circles. ",
     "age": 2,
     "type":"Fish",
     "locationId":1,
@@ -133,8 +133,8 @@
    {
     "petId": 5,
     "petName": "Fudge",
-    "description":"Likes to jump",
-    "age": 1,
+    "description":"I like to jump and eat carrots.",
+    "age": 3,
     "type":"Rabbit",
     "locationId":1,
     "userId":1,

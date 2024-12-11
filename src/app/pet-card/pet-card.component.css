@@ -1,36 +1,61 @@
 .pet-card-component {
   background: var(--accent-color);
   border-radius: 30px;
-  padding-bottom: 30px;
+  padding: 20px; /* Padding around the card */
+  box-sizing: border-box; /* Ensure padding/border are included in the width/height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align items at the top */
+  height: 100%; /* Allow card to grow if needed */
 }
 
 .pet-card-component .pet-photo {
-  width: 100%;        /* Image will take full width of the card */
-  height: 300px;      /* Fixed height for the image */
-  object-fit: cover;  /* Ensure the image fits the box without distortion */
-  border-radius: 8px; /* Optional: Add rounded corners to the image */
-  margin-bottom: 10px; /* Add some space below the image */
-  box-sizing: border-box; /* Ensure padding/border is included in image size */
-  max-width: 100%; /* Prevent image from exceeding card width */
-  max-height: 400px
-}
-.pet-card-component-name {
-  color: var(--primary-color);
-  padding: 10px 20px 0 20px;
-}
-.pet-card-component-description {
-  padding: 10px 20px 20px 20px;
-}
-.pet-card-component-age {
-  padding: 10px 20px 20px 20px;
-}
-.pet-card-component-type {
-  padding: 10px 20px 20px 20px;
+  width: 100%;           /* Make the image take full width of the card */
+  height: 300px;         /* Fixed height for the image */
+  object-fit: cover;     /* Ensure image fits within the box */
+  border-radius: 8px;    /* Rounded corners for the image */
+  margin-bottom: 15px;   /* Space below the image */
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
-section.pet-card-component a {
-  padding-left: 10px;
+.pet-card-component-name {
+  color: var(--primary-color);
+  font-size: 1.5em; /* Larger font for pet name */
+  font-weight: bold;
+  padding: 0 20px 10px 20px; /* Adjust padding */
+  margin-bottom: 10px; /* Space between name and description */
+}
+
+.pet-card-component-description,
+.pet-card-component-age,
+.pet-card-component-type {
+  padding: 10px 20px;
+  margin-bottom: 5px; /* Space between description, age, and type */
+  font-size: 1em; /* Ensure text is readable */
+}
+
+.pet-card-component a {
+  padding-left: 0; /* Remove left padding */
   text-decoration: none;
   color: var(--primary-color);
+  font-weight: bold;
+  margin-top: 15px; /* Space above the link */
+  display: inline-block; /* Make it behave like a block */
+  align-self: flex-start; /* Align the link to the left of the card */
 }
+
+.pet-card-component a:hover {
+  color: var(--secondary-color); /* Hover effect for links */
+}
+
+.pet-card-component .pet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  flex-grow: 1; /* Allow description and other text to fill the remaining space */
+}
+
+
 

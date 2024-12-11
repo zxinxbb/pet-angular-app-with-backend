@@ -9,25 +9,25 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [RouterOutlet, RouterLink],
   template: `
-    <main>
+   <main>
+  <header class="brand-name">
+    <a [routerLink]="['/']">
+      <img class="logo" src="assets/image_files/imagelogo.jpeg" alt="Logo" />
+    </a>
+    <!-- Right aligned PET link -->
+    <a [routerLink]="['/pet-post']" class="pet-post-link">
+      + PET
+    </a>
+  </header>
 
-      <a [routerLink]="['/']">
-        <header class="brand-name">
-
-         <h1>PetoTrader</h1>
-         <!-- <button [routerLink]="['/pet-post']">
-   + Pet
-  </button> -->
-
-        </header>
-        
-        </a>
-      <section class="content">
-        <router-outlet></router-outlet>
-      </section>
-    </main>`,
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</main>`,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+[x: string]: any;
   title = 'pet-angular-app';
+imagelogo: any;
 }
