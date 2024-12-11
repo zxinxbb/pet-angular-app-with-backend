@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterLink, RouterOutlet } from '@angular/router';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @Component({
@@ -12,7 +13,11 @@ import { RouterModule, RouterLink, RouterOutlet } from '@angular/router';
 
       <a [routerLink]="['/']">
         <header class="brand-name">
+
          <h1>PetoTrader</h1>
+         <button>
+   + Pet
+  </button>
         </header>
       </a>
       <section class="content">
