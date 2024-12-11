@@ -1,3 +1,4 @@
+
 /* General Styling */
 .pet-details-container {
   display: flex;
@@ -111,7 +112,7 @@ button.primary:hover:not(:disabled) {
   background-color: var(--primary-color-dark); /* Darker shade of primary */
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
   .pet-photo {
     width: 100%;
@@ -147,24 +148,3 @@ button.primary:hover:not(:disabled) {
   }
 }
 
-@media (max-width: 768px) {
-  .pet-heading {
-    font-size: 24px;
-  }
-
-  .pet-location {
-    font-size: 16px;
-  }
-
-  .pet-features li {
-    font-size: 14px;
-  }
-
-  .apply-form {
-    width: 100%;
-  }
-
-  button.primary {
-    padding: 10px;
-  }
-}
