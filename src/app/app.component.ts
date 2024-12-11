@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterLink, RouterOutlet } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
+
 
 
 @Component({
@@ -25,9 +25,13 @@ import { MatIconModule } from '@angular/material/icon';
   </section>
 </main>`,
   styleUrls: ['./app.component.css'],
+
 })
 export class AppComponent {
 [x: string]: any;
   title = 'pet-angular-app';
 imagelogo: any;
 }
+
+
+
