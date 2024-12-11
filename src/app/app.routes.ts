@@ -10,7 +10,7 @@ export const routes: Routes = [
     title: 'Home page',
   },
   {
-    path: 'pet/:petId',
+    path: 'pet/:id',
     component: PetDetailsComponent,
     title: 'Pet Details',
   },

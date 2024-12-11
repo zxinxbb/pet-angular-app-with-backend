@@ -1,0 +1,3 @@
+{
+  "/pet/:petId": "/pet?id=:petId"
+}

@@ -40,24 +40,20 @@ export class PetService {
       return []; // Return an empty array in case of error
     }
   }
-  async getPetsById(id: number): Promise<PetLocation| undefined> {
-    try {
-      const response = await fetch(`${this.url}/${id}`);
+  async getPetById(petId: number): Promise<PetLocation | undefined> {
+    const response = await fetch(`http://localhost:3000/pet/${petId}`);
 
-      if (!response.ok) {
-        throw new Error(`Failed to fetch location with ID ${id}: ${response.statusText}`);
-      }
-
-      const data: PetLocation = await response.json();
-      return data ?? undefined; // Return undefined if no data found
-    } catch (error) {
-      console.error(`Error fetching todo location with ID ${id}:`, error);
-      return undefined; // Return undefined in case of error
+    if (!response.ok) {
+      console.error(`Pet with ID ${petId} not found.`);
+      return undefined; // Or handle the error accordingly
     }
+
+    return await response.json();
   }
 
+
   // Submit a new pet
-  async submitApplication(
+  async submitPet(
     petId: number,
     petName: string,
     breedId: number,
@@ -90,5 +86,13 @@ export class PetService {
       console.error('Error submitting application:', error);
     }
   }
+
+
+async submitApplication(firstName: string, lastName: string) {
+  // tslint:disable-next-line
+  console.log(firstName, lastName);
 }
+
+}
+
 
