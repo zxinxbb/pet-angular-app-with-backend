@@ -91,9 +91,8 @@
   {
    "petId": 1,
    "petName": "layla",
-   "breedId":2,
    "description":"Likes chasing a ball.",
-   "typeId":1,
+  "age": 3,
    "type":"dog",
    "locationId":1,
    "userId":1
@@ -102,9 +101,8 @@
   {
     "petId": 2,
     "petName": "Meg",
-    "breedId":2,
     "description":"Likes chasing squirrels",
-    "typeId":1,
+    "age": 12,
     "type":"dog",
     "locationId":1,
     "userId":1
@@ -113,9 +111,8 @@
    {
     "petId": 3,
     "petName": "Oggy",
-    "breedId":2,
     "description":"Likes long naps",
-    "typeId":1,
+    "age": 8,
     "type":"cat",
     "locationId":1,
     "userId":1
@@ -124,9 +121,8 @@
    {
     "petId": 4,
     "petName": "Tiddles",
-    "breedId":2,
     "description":"Likes to swim ",
-    "typeId":1,
+    "age": 2,
     "type":"Fish",
     "locationId":1,
     "userId":1
@@ -135,9 +131,8 @@
    {
     "petId": 5,
     "petName": "Fudge",
-    "breedId":2,
-    "description":"Likes long to jump",
-    "typeId":1,
+    "description":"Likes to jump",
+    "age": 1,
     "type":"Rabbit",
     "locationId":1,
     "userId":1
