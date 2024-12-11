@@ -4,13 +4,14 @@ import { PetLocation } from '../pet.location';
 import { PetService } from '../pet.service';
 import { CommonModule } from '@angular/common';
 import { PetCardComponent } from '../pet-card/pet-card.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home-component',
   standalone: true,
   templateUrl: './home-component.component.html',
   styleUrls: ['./home-component.component.css'],
-  imports: [CommonModule, PetCardComponent]
+  imports: [CommonModule, PetCardComponent, RouterLink]
 })
 export class HomeComponent implements OnInit {
   petsList: PetLocation[] = [];

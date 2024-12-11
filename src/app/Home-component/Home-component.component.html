@@ -1,4 +1,7 @@
-<section class="results">
+
+<section>
+  <a [routerLink]="['/pet-post']"> + PET</a>
+</section><section class="results">
 
   <div class="pet-card" *ngFor=" let petLocation of  petsList">
     <app-pet-card [petLocation]="petLocation" ></app-pet-card>
