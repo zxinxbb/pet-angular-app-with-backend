@@ -1,9 +1,10 @@
 <section class="pet-card-component">
-
   <h3 class="pet-name">{{ petLocation.petName }}</h3>
-  <p>{{petLocation.description}}</p>
-
+  <p>{{ petLocation.description }}</p>
+  <p>{{ petLocation.age }}</p>
+  <p>{{ petLocation.type }}</p>
 
   <section>
     <a [routerLink]="['/pet', petLocation.petId]">Learn More</a>
   </section>
+</section>
