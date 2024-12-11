@@ -1,3 +1,45 @@
+
+<article class="pet-details-container">
+  <!-- Pet Image -->
+  <img
+    class="pet-photo"
+    [src]="petLocation?.image"
+    alt="Photo of {{ petLocation?.petName }}"
+    crossorigin
+  />
+
+  <section class="pet-description">
+    <!-- Pet Name -->
+    <h2 class="pet-heading">{{ petLocation?.petName }}</h2>
+    <p class="pet-location">Manchester</p>
+  </section>
+
+  <section class="pet-features">
+    <h2 class="pet-heading">About this Pet</h2>
+    <ul>
+      <li>Description: {{ petLocation?.description }}</li>
+    </ul>
+  </section>
+
+  <section class="pet-apply">
+    <h2 class="pet-heading">Apply now to borrow this pet</h2>
+
+    <!-- Application Form -->
+    <form [formGroup]="applyForm" (ngSubmit)="submitApplication()" class="apply-form">
+      <label for="first-name">First Name</label>
+      <input id="first-name" type="text" formControlName="firstName" />
+
+      <label for="last-name">Last Name</label>
+      <input id="last-name" type="text" formControlName="lastName" />
+
+      <button type="submit" class="primary" [disabled]="applyForm.invalid">
+        Apply now
+      </button>
+    </form>
+  </section>
+</article>
+
+
 <div class="logo-container">
   <img src="assets/logo.png" alt="App Logo" class="logo" />
 </div>
@@ -7,6 +49,7 @@
   <p> in here </p>
   </section>
 </article>
+
 
 
 

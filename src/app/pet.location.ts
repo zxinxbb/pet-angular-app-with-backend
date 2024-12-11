@@ -1,5 +1,5 @@
 export interface PetLocation {
-  petId: number;
+  id: number;
     petName: string;
     age: number;
     description:String,

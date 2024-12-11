@@ -89,7 +89,7 @@
 ],
 "pet": [
   {
-   "petId": 1,
+   "id": 1,
    "petName": "layla",
    "description":"I like chasing a ball and eating ham.",
   "age": 3,
@@ -100,7 +100,7 @@
 
   },
   {
-    "petId": 2,
+    "id": 2,
     "petName": "Meg",
     "description":"I like chasing squirrels and barking.",
     "age": 12,
@@ -111,7 +111,7 @@
 
    },
    {
-    "petId": 3,
+    "id": 3,
     "petName": "Oggy",
     "description":"I enjoy long naps and sleeping on uninterested people.",
     "age": 8,
@@ -121,7 +121,7 @@
     "image":"assets/image_files/pexels-pixabay-45201.jpg"
    },
    {
-    "petId": 4,
+    "id": 4,
     "petName": "Tiddles",
     "description":"I like to swim in circles. ",
     "age": 2,
