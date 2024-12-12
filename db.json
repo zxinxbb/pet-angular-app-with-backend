@@ -88,21 +88,11 @@
 
 ],
 "pet": [
-  {
-   "id": 1,
-   "petName": "layla",
-   "description":"I like chasing a ball and eating ham.",
-  "age": 3,
-   "type":"Dog",
-   "locationId":1,
-   "userId":1,
-   "image":"assets/image_files/760ecd40-5008-4ba0-b5bd-d30ffd727cba.jpg"
 
-  },
   {
     "id": 2,
     "petName": "Meg",
-    "description":"I like chasing squirrels and barking.",
+    "description":"My name is Meg. I am an old girl but a good girl. I like a short walk but usually sleep a lot and like a cuddle in my favourite blanket.",
     "age": 12,
     "type":"Dog",
     "locationId":1,
@@ -113,7 +103,7 @@
    {
     "id": 3,
     "petName": "Oggy",
-    "description":"I enjoy long naps and sleeping on uninterested people.",
+    "description":"I occasionally go outside in the garden but mostly stay indoors as I’m a pampered prince! I live with my mum, dad andsisters who are aged 12 and 15.",
     "age": 8,
     "type":"Cat",
     "locationId":1,
@@ -123,7 +113,7 @@
    {
     "id": 4,
     "petName": "Tiddles",
-    "description":"I like to swim in circles. ",
+    "description":" I make the best companion for people who want to look after a pet but are also busy. I come with pretty much everything Ineed in my tank and only need feeding twice a day. Other than that I cantake care of myself! You’ll often find me swimming under my bridge or inbetween the reeds. I like it when you tap gently on my tank to say hello ",
     "age": 2,
     "type":"Fish",
     "locationId":1,
@@ -133,12 +123,45 @@
    {
     "petId": 5,
     "petName": "Fudge",
-    "description":"I like to jump and eat carrots.",
+    "description":"I am a house rabbit. I live with my mum who says I’m the most beautiful girl in the world. I’m basically a catas I’m housetrained, but I’m better than a cat as I don’t scratch! I likeeating lettuce and having my fur brushed.",
     "age": 3,
     "type":"Rabbit",
     "locationId":1,
     "userId":1,
     "image":"assets/image_files/pexels-pixabay-326012.jpg"
+
+   },
+   {
+    "petId": 6,
+    "petName": "Caspar",
+    "description":"I live with my mum and dad who see me as their babyand are always dressing me up for doggy photo shoots. I am mostly withpeople during the day and like most people and dogs. I love to swim and am always jumping in muddy puddles, which makes my mum cross as she is always having to bath me!",
+    "age": 4,
+    "type":"Dog",
+    "locationId":1,
+    "userId":1,
+    "image":"assets/image_files/Caspar1.jpg"
+
+   },
+   {
+    "petId": 7,
+    "petName": "Nina",
+    "description":"I live with Teddy and our mummies who rescued us 2 years ago. We aren’t from the same litter but see ourselves as brother and sister and are very close. We like a quiet home with sofa cuddles and no children. We love going for walks too and having a puppucino after!",
+    "age": 8,
+    "type":"Dog",
+    "locationId":1,
+    "userId":1,
+    "image":"assets/image_files/Nina&Teddy.jpeg"
+
+   },
+   {
+    "id": 1,
+    "petName": "Laila and I’m looking for a friend!",
+    "description":" I live with my daddy,brother (11) and sister (8). I love chasing squirrels on my walks and protecting my family from the postman and delivery drivers! I can be timid as I didn’t have the best start in life but I’m very friendly once I getto know you and would love to cuddle on the sofa with you. If you want toget on my good side give me some ham and we will be best friends forever.",
+   "age": 3,
+    "type":"Dog",
+    "locationId":1,
+    "userId":1,
+    "image":"assets/image_files/760ecd40-5008-4ba0-b5bd-d30ffd727cba.jpg"
 
    }
 
