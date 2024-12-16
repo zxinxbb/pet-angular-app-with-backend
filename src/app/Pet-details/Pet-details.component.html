@@ -3,14 +3,14 @@
   <!-- Pet Image -->
   <img
     class="pet-photo"
-    [src]="petLocation?.image"
-    alt="Photo of {{ petLocation?.petName }}"
+    [src]="petLocation?.imagePath"
+    alt="Photo of {{ petLocation?.name }}"
     crossorigin
   />
 
   <section class="pet-description">
     <!-- Pet Name -->
-    <h2 class="pet-heading">{{ petLocation?.petName }}</h2>
+    <h2 class="pet-heading">{{ petLocation?.name }}</h2>
     <p class="pet-location">Manchester</p>
   </section>
 

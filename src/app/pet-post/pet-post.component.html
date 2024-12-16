@@ -1,22 +1,9 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <p>
-    <label for="userName">Username:</label>
-    <input id="userName" formControlName="userName" />
-    <span
-      **ngIf="expression"
-      If="form.controls.userName.invalid && form.controls.userName.touched"
-    >
-      userName is required.
-    </span>
-  </p>
 
   <p>
-    <label for="petName">PetName:</label>
-    <input id="petName" type="petName" formControlName="petName" />
-    <span
-      **ngIf="expression"
-      If="form.controls.petName.invalid && form.controls.petName.touched"
-    >
+    <label for="name">PetName:</label>
+    <input id="name" type="text" formControlName="name" />
+    <span *ngIf="form.controls.name.invalid && form.controls.name.touched">
       PetName is required.
     </span>
   </p>
@@ -25,54 +12,42 @@
     <label for="description">Description:</label>
     <textarea
       id="description"
-      type="description"
       formControlName="description"
       rows="8"
       cols="30"
     ></textarea>
-    <span
-      **ngIf="expression"
-      If="form.controls.description.invalid && form.controls.description.touched"
-    >
+    <span *ngIf="form.controls.description.invalid && form.controls.description.touched">
       Description is required.
     </span>
   </p>
 
   <p>
     <label for="age">Age:</label>
-    <input id="age" type="age" formControlName="age" />
-    <span
-      **ngIf="expression"
-      If="form.controls.age.invalid && form.controls.age.touched"
-    >
+    <input id="age" type="number" formControlName="age" />
+    <span *ngIf="form.controls.age.invalid && form.controls.age.touched">
       Age is required.
     </span>
   </p>
 
   <p>
     <label for="type">Type:</label>
-    <input id="type" type="type" formControlName="type" />
-    <span
-      **ngIf="expression"
-      If="form.controls.type.invalid && form.controls.type.touched"
-    >
+    <input id="type" type="text" formControlName="type" />
+    <span *ngIf="form.controls.type.invalid && form.controls.type.touched">
       Animal Type is required.
     </span>
   </p>
 
   <p>
-    <label for="image">Upload PetImage:</label>
-    <input
-      type="file"
-      id="image"
-      formControlName="image"
-      (change)="onImageChange($event)"
-    />
-    <span *ngIf="form.controls.image.invalid && form.controls.image.touched">
-      Pet image is required.
-    </span>
+    <label for="image">Upload Pet Image:</label>
+    <input type="file" id="image" (change)="onImageChange($event)" />
+    <span *ngIf="form.controls.imagePath.invalid && form.controls.imagePath.touched">Image is required.</span>
   </p>
+
+  <p>
+
   <p>
     <button type="submit" [disabled]="form.invalid">Submit</button>
   </p>
+  <p *ngIf="submissionSuccess" style="color: green; font-weight: bold;">Pet submitted successfully!</p>
+
 </form>

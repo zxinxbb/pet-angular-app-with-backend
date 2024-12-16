@@ -22,7 +22,7 @@ export class PetDetailsComponent  {
     email: new FormControl(''),
   });
 constructor (){
-    const petDetailsId = parseInt(this.route.snapshot.params['id'], 10);
+    const petDetailsId = (this.route.snapshot.params['id']);
 console.log(petDetailsId)
     this.petService.getPetById(petDetailsId).then((petLocation) => {console.log(petLocation)
       this.petLocation = petLocation;
